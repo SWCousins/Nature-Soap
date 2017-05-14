@@ -101,68 +101,19 @@
 
 <div class="work-feature-block row">
   <div class="columns medium-7">
-    <div id="player"></div>
+    <div id="player"><iframe width="560" height="315" src="https://www.youtube.com/embed/a1whiEODZLs" frameborder="0" allowfullscreen></iframe></div>
   </div>
   <div class="columns medium-5">
-    <h2 class="work-feature-block-header">Project Description</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-    <h2>Project Details</h2>
+    <h2 class="work-feature-block-header">Soapberries Live</h2>
+    <p>We take Nature-Soap Soapberries into the community to put their cleaning power to the test in front of real people. We get asked all the time about really specific messes and if the cleaning power of Soapberries will do the job. If we don't know, we say "Let's put it to the test!"</p>
+    <h2>Some Key Facts:</h2>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
+      <li>Soapberries are antimicrobial, anti-bacterial and also kill dustmites!</li>
+      <li>Soapberries can be used for more than just laundry, it excels at cleaning surfaces and glass!</li>
+      <li>As powerful as these berries are, they are gentle enough for sensitive skin and infants!</li>
+      <li>Soapberries are ecologically sound, and easily biodegradable!</li>
     </ul>
   </div>
 </div>
 
 
-      
-
-
-      
-      
-      
-      
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
