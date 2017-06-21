@@ -23,8 +23,35 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
       
+      
+<div class="mobile-nav-bar title-bar show-for-small-only">
+  <div class="title-bar-left">
+      <a href="index.html"><img src="Img/NatSoapLogo.png" width="53px"></a>
+  </div>
+  <div class="title-bar-center">
+  </div>
+  <div class="title-bar-right">
+    <span class="title-bar-text">Menu</span>
+      
+    <span class="title-bar-text"><button class="button" data-open="mobile-ios-modal"><i class="fa fa-bars title-bar-logo"></i></button></span>
+  </div>
 
-<nav class="top-bar topbar-responsive">
+      
+      
+<div class="reveal mobile-ios-modal" id="mobile-ios-modal" data-reveal>
+
+  <div class="mobile-ios-modal-options-stacked">
+      <a href="./shop.html"><button class="button"><strong>Shop Now!</strong></button></a>
+      <a href="./about.html"><button class="button">About Us</button></a>
+      <a href="./news.html"><button class="button">News</button></a>
+      <a href="./contact.html"><button class="button">Contact Us</button></a>
+    <button data-close class="button">Cancel</button>
+  </div>
+</div>
+      </div>
+      
+
+<nav class="top-bar topbar-responsive hide-for-small-only">
   <div class="top-bar-title">
     <!--<span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
@@ -51,7 +78,7 @@
 
 <!--Sticky Social Media Links-->
 <!-- You can add more icons at http://fontawesome.io/icons/#brand -->
-<ul class="sticky-social-bar">
+<ul class="sticky-social-bar hide-for-small-only">
   <li class="social-icon">
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nature-soap.com%2F&amp;src=sdkpreparse" target="_blank"> 
         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -100,10 +127,10 @@
       
 
 <div class="work-feature-block row">
-  <div class="columns medium-7">
-    <div id="player"><iframe width="560" height="315" src="https://www.youtube.com/embed/a1whiEODZLs" frameborder="0" allowfullscreen></iframe></div>
+  <div class="columns xlarge-7 large-7 medium-7 small-12">
+    <div id="player"><iframe  class="columns xlarge-7 large-7 medium-10 small-12"  src="https://www.youtube.com/embed/a1whiEODZLs" height="350" width="350" frameborder="0" allowfullscreen></iframe></div>
   </div>
-  <div class="columns medium-5">
+  <div class="columns xlarge-5 large-5 medium-5 small-12">
     <h2 class="work-feature-block-header">Soapberries Live</h2>
     <p>We take Nature-Soap Soapberries into the community to put their cleaning power to the test in front of real people. We get asked all the time about really specific messes and if the cleaning power of Soapberries will do the job. If we don't know, we say "Let's put it to the test!"</p>
     <h2>Some Key Facts:</h2>
@@ -117,3 +144,12 @@
 </div>
 
 
+      
+          <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+      
+    </body>
+</html>

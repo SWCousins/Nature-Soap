@@ -24,7 +24,34 @@
 }(document, 'script', 'facebook-jssdk'));</script>
       
 
-<nav class="top-bar topbar-responsive">
+<div class="mobile-nav-bar title-bar show-for-small-only">
+  <div class="title-bar-left">
+      <a href="index.html"><img src="Img/NatSoapLogo.png" width="53px"></a>
+  </div>
+  <div class="title-bar-center">
+  </div>
+  <div class="title-bar-right">
+    <span class="title-bar-text">Menu</span>
+      
+    <span class="title-bar-text"><button class="button" data-open="mobile-ios-modal"><i class="fa fa-bars title-bar-logo"></i></button></span>
+  </div>
+
+      
+      
+<div class="reveal mobile-ios-modal" id="mobile-ios-modal" data-reveal>
+
+  <div class="mobile-ios-modal-options-stacked">
+      <a href="./shop.html"><button class="button"><strong>Shop Now!</strong></button></a>
+      <a href="./news.html"><button class="button">News</button></a>
+      <a href="./video.html"><button class="button">Video</button></a>
+      <a href="./about.html"><button class="button">About Us</button></a>
+    <button data-close class="button">Cancel</button>
+  </div>
+</div>
+      </div>
+      
+
+<nav class="top-bar topbar-responsive hide-for-small-only">
   <div class="top-bar-title">
     <!--<span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
@@ -97,15 +124,16 @@
     </div>
     <div class="columns contact-us-section-right">
       <h1 class="contact-us-header">Mail Us</h1>
-      <form class="contact-us-form">
-        <input type="text" placeholder="Full name">
-        <input type="email" placeholder="Email">
+      <form class="contact-us-form" action="contact.php">
+        <input type="text" name="name" placeholder="Full name">
+        <input type="email" name="email" placeholder="Email">
         <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
         <div class="contact-us-form-actions">
           <input type="submit" class="button" value="Send it" />
           <div>
-            <label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
+            <!--<label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
             <input type="file" id="FileUpload" class="show-for-sr">
+            -->
           </div>
         </div>
       </form>
@@ -118,7 +146,7 @@
 
 <!--Sticky Social Media Links-->
 <!-- You can add more icons at http://fontawesome.io/icons/#brand -->
-<ul class="sticky-social-bar">
+<ul class="sticky-social-bar hide-for-small-only">
   <li class="social-icon">
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nature-soap.com%2F&amp;src=sdkpreparse" target="_blank"> 
         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -163,4 +191,11 @@
   </li> 
 </ul>
 
+          <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
       
+    </body>
+</html>
